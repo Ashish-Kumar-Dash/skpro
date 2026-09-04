@@ -1110,6 +1110,8 @@ class BaseDistribution(BaseObject):
         Numerically more stable than calling cdf and then taking logarithms,
         in particular in the lower tail, where ``cdf`` underflows to zero.
 
+        {formula_hook}
+
         Let :math:`X` be a random variable with the distribution of ``self``,
         taking values in ``(N, n)`` ``DataFrame``-s
         Let :math:`x\in \mathbb{R}^{N\times n}`.
